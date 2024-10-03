@@ -7,3 +7,23 @@ function showSectionById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
+
+function setBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+
+function getARandomAlphabet(){
+    // create alphabet 
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+    const alphabets = alphabetString.split('');
+
+    // random generate alphabet 0-25
+    const randomNumber = Math.random() * 25 ;
+    const index = Math.round(randomNumber);
+
+    // alphabets random create a - z
+    const alphabet = alphabets[index];
+    return alphabet;
+
+}
